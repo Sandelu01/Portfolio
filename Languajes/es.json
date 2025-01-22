@@ -1,0 +1,13 @@
+{
+    "profile" : {
+        "rol": "Desarrollador Front-End",
+        "description": "Hola! Soy Santiago De Luca, soy un desarrollador web y programador con mas de 4 años de experiencia, en estos 4 años desarrolle importantes aptitudes en diferentes lenguajes de programacion, HTML, CSS, JavaScript, Java, Phyton, C, React, etc..."
+    },
+    "experience": {
+        "first-job-title": "Desarrollador Front-End",
+        "first-job-dates": "Enero 2020 - Enero 2021",
+        "first-job.description": "Loremjdnfjdnfdsjlfnsdljfndsljvndsjvndsjlvn sldjcvnlsdj",
+        "second-job-title": "dfdfdsfsdfsdf"
+
+    }
+}
