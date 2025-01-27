@@ -36,6 +36,127 @@ body.dark{
     --bg-card-color:hsl(0, 0%, 20%);
 }
 
+.body_loader {
+    background-color: rgb(36, 36, 36);
+}
+
+.loader__container {
+    margin-top: 200px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loader-square {
+    display: grid;
+    grid-template-columns: max-content max-content;
+    animation: loader forwards 3s infinite;
+}
+
+.square {
+    width: 60px;
+    height: 60px;
+    background-color: #3bc7eb;
+    border: 1px solid rgb(240, 240, 240);
+    border-radius: 8px;
+}
+
+@property --square-1 {
+    syntax: "<transform-function>";
+    inherits: true;
+    initial-value: translate(0,0);
+}
+
+@property --square-2 {
+    syntax: "<transform-function>";
+    inherits: true;
+    initial-value: translate(0,0);
+}
+
+@property --square-3 {
+    syntax: "<transform-function>";
+    inherits: true;
+    initial-value: translate(0,0);
+}
+
+@property --square-4 {
+    syntax: "<transform-function>";
+    inherits: true;
+    initial-value: translate(0,0);
+}
+
+.square-1 {
+    transform: var(--square-1);
+}
+
+.square-2 {
+    transform: var(--square-2);
+}
+
+.square-3 {
+    transform: var(--square-3);
+}
+
+
+.square-4 {
+    transform: var(--square-4);
+}
+
+
+
+@keyframes loader {
+    0%{
+        --square-1:translate(0%, 0%);
+        --square-2:translate(0%, 0%);
+        --square-3:translate(0%, 0%);
+        --square-4:translate(0%, 0%);
+    }
+    25%{
+        --square-1:translate(-100%, -100%);
+        --square-2:translate(100%, -100%);
+        --square-3:translate(-100%, 100%);
+        --square-4:translate(100%, 100%);
+    }
+    50%{
+        --square-1:translate(200%, -100%);
+        --square-2:translate(100%, 200%);
+        --square-3:translate(-100%, -200%);
+        --square-4:translate(-200%, 100%);
+    }
+    75%{
+        --square-1:translate(100%, 0%);
+        --square-2:translate(0%, 100%);
+        --square-3:translate(0%, -100%);
+        --square-4:translate(-100%, 0%);
+    }
+    
+}
+
+.title {
+    margin-top: 100px;
+    text-shadow: black 5px 5px;
+    text-transform:;
+}
+
+.button {
+    background-color: #023038;
+    margin-left: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-color: rgb(14, 4, 0);
+}
+
+.button:hover {
+    cursor: pointer;
+    background-color: #248ba5;
+}
+
+.button:active {
+    background-color: #1a697c;
+}
+
 .header{
     display: flex;
     align-items: center;
@@ -191,6 +312,7 @@ body.dark{
 
 .card__link{
     margin-bottom: .5em;
+    transition: var(--transition);
 
 }
 
