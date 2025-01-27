@@ -57,6 +57,8 @@ body.dark{
         blink 1.5s infinite step-end alternate;
     overflow: hidden;
 }
+
+
 @keyframes typing {
     from { width: 0;}
 }
