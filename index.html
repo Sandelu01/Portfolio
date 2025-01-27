@@ -1,23 +1,252 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/styles.css" />
-    <title>De Luca Santiago</title>
-</head>
-<body class="body_loader">
-    <div class="loader__container">
-        <div class="loader-square">
-            <div class="square square-1"></div>
-            <div class="square square-2"></div>
-            <div class="square square-3"></div>
-            <div class="square square-4"></div>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Portfolio Santiago</title>
+  </head>
+  <body class="dark">
+    <header class="header">
+     <div class="switches">
+      <div id="toggle-theme" class="toggle-theme">
+        <img 
+          id="toggle-icon" 
+          src="assets/icons/moon.svg" 
+          alt="icon theme" 
+          class="toggle-theme__icon"
+        />
+        <p id="toggle-text"
+        class="toggle-theme__tex">Dark Mode</p>
+      </div>
+     </div> 
+     <div id="flags" class="flags">
+      <div class="flags__item" data-languaje="es">
+        <img src="assets/icons/es.svg" alt="Español">
+      </div>
+      <div class="flags__item" data-languaje="en">
+        <img src="assets/icons/gb.svg" alt="Ingles">
+      </div>
+     </div>
+     <div id="toggle-colors" class="colors">
+      <div data-color="hsl(189, 100%, 50%)" class="colors__item colors__item--blue"></div>
+      <div data-color="hsl(108, 98%, 53%)" class="colors__item colors__item--green"></div>
+      <div data-color="hsl(300, 93%, 55%)" class="colors__item colors__item--purple"></div>
+      <div data-color="hsl(17, 96%, 53%)" class="colors__item colors__item--orange"></div>
+     </div>
+    </header>
+    <main class="main">
+      <section class="column column--left">
+        <!--Profile card-->
+        <article class="card card--profile">
+          <div class="card__image-container">
+            <img class="img-profile" src="assets/images/Santi.jpg" alt="">
+          </div>
+          <div class="class__header">
+            <h2 class="card__title no-margin">Santiago De Luca</h2>
+            <p class="card__subtitle " data-section="profile" data-value="rol">Front End Developer</p>
+          </div>
+          <div class="card__body">
+            <div class="card__link">
+              <i class="fa-solid fa-envelope"></i>
+              <a href="mailto:santiago.deluca1991@gmail.com">
+                santiago.deluca1991@gmail.com
+              </a>
+            </div>
+            <div class="card__link">
+              <i class="fa-solid fa-phone"></i>
+              <a href="tel:+542215863711">
+                +54-2215863711
+              </a>
+            </div>
+            <p class="card__text" data-section="profile" data-value="description">
+              Hola! Soy Santiago De Luca, soy desarrollador web con mas de 4 años de 
+              experiencia. Tengo bastos conocimientos en HTML, CSS, Java, JavaSript,
+              Phyton, React, C, SQL, MySQL, Ruby, etc...
+            </p>
+          </div>
+        </article>
+        <article class="card card--experience">
+          <h2 class="card__title" >Experiences</h2>
+          <div class="experience">
+            <img src="assets/images/logo.png" alt="logo" class="experience__image">
+            <div class="experience__info">
+              <p class="experience__time">
+                2020 - current
+              </p>
+              <h3 class="experience__job">
+                Front End Developer
+              </h3>
+              <p class="experience__description">
+                Freelance in S&S Web Design
+              </p>
+            </div>
+          </div>
+          <div class="experience">
+            <img src="assets/images/logo.png" alt="logo" class="experience__image">
+            <div class="experience__info">
+              <p class="experience__time">
+                2020 - current
+              </p>
+              <h3 class="experience__job">
+                Front End Developer
+              </h3>
+              <p class="experience__description">
+                Freelance in S&S Web Design
+              </p>
+            </div>
+          </div>
+          <div class="experience">
+            <img src="assets/images/logo.png" alt="logo" class="experience__image">
+            <div class="experience__info">
+              <p class="experience__time">
+                2020 - current
+              </p>
+              <h3 class="experience__job">
+                Front End Developer
+              </h3>
+              <p class="experience__description">
+                Freelance in S&S Web Design
+              </p>
+            </div>
+          </div>
+        </article>
+        <article class="card card--hobbies">
+          <h2 class="card__title">Hobbies</h2>
+          <div class="card__image-container">
+            <img src="assets/images/hobbie.jpg" alt="Hobbie">
+          </div>
+          <h3 class="hobbie__title">Diseñar</h3>
+          <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta voluptates doloribus asperiores voluptas, autem sunt non.</p>
+        </article>
+      </section>
+      <section class="column column--right">
+        <article class="card">
+          <h2 class="card__title">Front End</h2>
+          <small>Años de experiencia</small>
+          <div class="skills">
+          <div class="skills__header">
+            <span class="skills__start-level">0</span>
+            <span class="skills__start-level">6</span>
+          </div>
+          <div class="skills">
+            <div class="skills__item">
+              <p class="skills__tech">HTML</p>
+              <div class="skills__bar skills__bar--90"></div>
+            </div>
+            <div class="skills__item">
+              <p class="skills__tech">CSS</p>
+              <div class="skills__bar skills__bar--80"></div>
+            </div>
+            <div class="skills__item">
+              <p class="skills__tech">JavaScript</p>
+              <div class="skills__bar skills__bar--60"></div>
+            </div>
+            <div class="skills__item">
+              <p class="skills__tech">PHP</p>
+              <div class="skills__bar skills__bar--70"></div>
+            </div>
+            <div class="skills__item">
+              <p class="skills__tech">React</p>
+              <div class="skills__bar skills__bar--90"></div>
+            </div>
+            <div class="skills__item">
+              <p class="skills__tech">Phyton</p>
+              <div class="skills__bar skills__bar--80"></div>
+            </div>
+          </div>
         </div>
-    </div>
-    <div class="title">
-        <h1 class="Nombre">De Luca Santiago Developer</h1>
-    </div>
-    <a href="index2.html" class="button">Ingresar</a>
-</body>
+        </article>
+        <article class="card">
+          <h2 class="card__title">Design</h2>
+          <div class="skills-card-2">
+            <div class="skills__item">
+              <p class="skills__tech">PhotoShop</p>
+              <div class="skills__bar skills__bar--90"></div>
+            </div>
+            <div class="skills__item">
+              <p class="skills__tech">Ilustrator</p>
+              <div class="skills__bar skills__bar--80"></div>
+            </div>
+            <div class="skills__item">
+              <p class="skills__tech">Figma</p>
+              <div class="skills__bar skills__bar--60"></div>
+            </div>
+            </div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="icons__skills">
+            <img src="assets/icons/html_original_wordmark_logo_icon_146478.svg" alt="" class="icon_skill">
+            <img src="assets/icons/file_type_css_icon_130661.svg" alt="" class="icon_skill">
+            <img src="assets/icons/javascript_icon_130900.svg" alt="" class="icon_skill">
+          </div>
+        </article>
+        <article class="card card--projets">
+          <div class="card__image-container">
+            <img src="assets/images/project.jpg" alt="Proyecto 1" class="card__img">
+          </div>
+          <div class="projets">
+            <div class="projets__tags">
+              <span class="projets__tag">#HTML</span>
+              <span class="projets__tag">#CSS</span>
+              <span class="projets__tag">#JavaScrips</span>
+              <span class="projets__tag">#Responsive</span>
+            </div>
+            <h2 class="card__title">Landing Page</h2>
+            <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad alias earum cum officia sequi illum nesciunt.</p>
+            <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad alias earum cum officia sequi illum nesciunt.</p>
+            <div class="buttons">
+              <a href="#" class="button button--primary">Demo</a>
+              <a href="#" class="button button--ghost">Code</a>
+            </div>
+          </div>
+        </article>
+        <article class="card card--projets">
+          <div class="card__image-container">
+            <img src="assets/images/project.jpg" alt="Proyecto 1" class="card__img">
+          </div>
+          <div class="projets">
+            <div class="projets__tags">
+              <span class="projets__tag">#HTML</span>
+              <span class="projets__tag">#CSS</span>
+              <span class="projets__tag">#JavaScrips</span>
+              <span class="projets__tag">#Responsive</span>
+            </div>
+            <h2 class="card__title">Landing Page</h2>
+            <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad alias earum cum officia sequi illum nesciunt.</p>
+            <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad alias earum cum officia sequi illum nesciunt.</p>
+            <div class="buttons">
+              <a href="https://sandelu01.github.io/Portfolio/"  class="button button--primary">Demo</a>
+              <a href="https://github.com/Sandelu01/Portfolio"  class="button button--ghost">Code</a>
+            </div>
+          </div>
+        </article>
+        <article class="card card--projets">
+          <div class="card__image-container">
+            <img src="assets/images/project.jpg" alt="Proyecto 1" class="card__img">
+          </div>
+          <div class="projets">
+            <div class="projets__tags">
+              <span class="projets__tag">#HTML</span>
+              <span class="projets__tag">#CSS</span>
+              <span class="projets__tag">#JavaScrips</span>
+              <span class="projets__tag">#Responsive</span>
+            </div>
+            <h2 class="card__title">Landing Page</h2>
+            <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad alias earum cum officia sequi illum nesciunt.</p>
+            <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad alias earum cum officia sequi illum nesciunt.</p>
+            <div class="buttons">
+              <a href="#" class="button button--primary">Demo</a>
+              <a href="#" class="button button--ghost">Code</a>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+    <script src="js/scripts.js"></script>
+  </body>
 </html>
