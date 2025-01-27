@@ -37,7 +37,31 @@ body.dark{
 }
 
 .body_loader {
+    justify-content: center;
     background-color: rgb(36, 36, 36);
+}
+
+.title {
+    font-family: "Nanum Brush Script", serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.title {
+    margin-left: 40%;
+    font-family: "Nanum Brush Script", serif;
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 49ch;
+    animation: typing 2s steps(28),
+        blink 1.5s infinite step-end alternate;
+    overflow: hidden;
+}
+@keyframes typing {
+    from { width: 0;}
+}
+@keyframes blink {
+    50% {border-color: transparent;}
 }
 
 .loader__container {
