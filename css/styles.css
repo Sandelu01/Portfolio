@@ -10,7 +10,7 @@
 
 * {
     box-sizing: border-box;
-    font-family: "Dosis", serif;
+    
 }
 
 a{
@@ -29,6 +29,7 @@ body{
     color: var(--text-color);
     transition: var(--transition);
     font-family: sans-serif;
+    font-family: "Dosis", serif;
 }
 
 body.dark{
